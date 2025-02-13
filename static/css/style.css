@@ -1,0 +1,183 @@
+@font-face {
+	font-family: "Veles";
+	src: url("fonts/ofont.ru_Veles.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Veles", Arial, sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+	.side-image:first-of-type {
+		display: none;
+	}
+}
+
+
+.container {
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.heading-with-images {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.side-image {
+	height: 150px;
+	width: auto;
+	border-radius: 10px;
+}
+
+
+.invite-image,
+.angry-image,
+.cute-image {
+	max-height: 350px;
+	max-width: 500px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+h1 {
+	font-size: 4em;
+	color: #423189;
+	margin: 20px 0;
+}
+
+h1,
+p {
+	background-color: #ffffff;
+	display: inline-block;
+	margin: 10px 0;
+	padding: 20px;
+}
+
+p {
+	font-size: 2em;
+	color: #423189;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+
+.response-buttons {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.btn {
+	padding: 20px 40px;
+	font-size: 1.5em;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, border-color 0.3s ease;
+	background-color: #423189;
+	color: #ffffff;
+}
+
+.btn:hover {
+	background-color: #5a4db5;
+}
+
+.btn:focus {
+	outline: 2px solid #ffffff;
+	outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+	.btn {
+		width: 60%;
+		padding: 18px 35px;
+		font-size: 1.4em;
+	}
+}
+
+@media (max-width: 480px) {
+	.btn {
+		width: 80%;
+		padding: 16px 30px;
+		font-size: 1.3em;
+	}
+}
+
+@media (max-width: 768px) {
+	 .invite-image {
+    width: 50%;
+    height: auto;
+  }
+
+	.angry-image,
+	.cute-image {
+		max-width: 80%;
+		margin: 0 auto 20px;
+		display: block;
+	}
+
+	.heading-with-images {
+		flex-direction: column;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	p {
+		font-size: 1.5em;
+		padding: 15px;
+	}
+
+	.btn {
+		width: 45%;
+		padding: 12px 0;
+		font-size: 1.1em;
+	}
+}
+
+@media (max-width: 480px) {
+	.homepage .container {
+		margin-top: 270px;
+	}
+
+	.invite-image,
+	.angry-image,
+	.cute-image {
+		max-width: 100%;
+		height: 250px;
+		object-fit: cover;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	p {
+		font-size: 1.2em;
+		padding: 10px;
+	}
+
+	.btn {
+		width: 80%;
+		padding: 10px 0;
+		font-size: 1em;
+	}
+
+	.response-buttons {
+		flex-direction: column;
+		gap: 15px;
+	}
+}
