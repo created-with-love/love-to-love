@@ -1,13 +1,12 @@
 # The Ultimate Valentine's Day Proposal Website ❤️
 
-Ever dreamed of a website that  asks your special lady out on a date? Welcome—this site's built for that one special chick on February 14th.
+Ever dreamed of a website that asks your special lady out on a date? Welcome—this site's built for that one special chick on February 14th.
 
-[<img src="assets/enshowcase.gif" alt="showcase"  />](https://mentoster.github.io/magicmoment/)
----
+## [<img src="assets/enshowcase.gif" alt="showcase"  />](https://mentoster.github.io/magicmoment/)
+
 # Choose Your Language
 
 Click to select your language:
-
 
 [<img src="assets/eaglesss.png" alt="English" width="50" />](README.md)
 **[English](README.md)**
@@ -19,40 +18,38 @@ Click to select your language:
 
 ---
 
-
-
-
 ## Customization
 
 Want to change the text? Everything—the text, images, and even the jokes—can be customized in the file [`src/config.ts`](src/config.ts). Check out what's there:
 
 ```ts
-import { assets } from "$app/paths";
+import { assets } from '$app/paths';
 
 export const config = {
-	mainPage: {
-		heading: "При, Anna",
-		invitation: "Will you go on a date with me this week? 👉👈🥺",
-		yesText: "Yes",
-		noText: "No",
-		topImage: `${assets}/Assets/Top_picture/Cute_pic2.jpg`,
-		leftHeart: `${assets}/Assets/Hearts/heart_3d.gif`,
-		rightHeart: `${assets}/Assets/Hearts/heart_3d.gif`,
-	},
-	noPage: {
-		message: '"No" – is not an option at all😁',
-		image: `${assets}/Assets/No_picture/kermit-shooting.gif`,
-	},
-	yesPage: {
-		message: "See you this week 😄",
-		image: `${assets}/Assets/Yes_picture/Yes.gif`,
-	},
+  mainPage: {
+    heading: 'При, Anna',
+    invitation: 'Will you go on a date with me this week? 👉👈🥺',
+    yesText: 'Yes',
+    noText: 'No',
+    topImage: `${assets}/Assets/Top_picture/Cute_pic2.jpg`,
+    leftHeart: `${assets}/Assets/Hearts/heart_3d.gif`,
+    rightHeart: `${assets}/Assets/Hearts/heart_3d.gif`,
+  },
+  noPage: {
+    message: '"No" – is not an option at all😁',
+    image: `${assets}/Assets/No_picture/kermit-shooting.gif`,
+  },
+  yesPage: {
+    message: 'See you this week 😄',
+    image: `${assets}/Assets/Yes_picture/Yes.gif`,
+  },
 };
 ```
 
 ## Technological Magic
 
 This site is powered by the force of technology:
+
 - **[SvelteKit](https://kit.svelte.dev):** Builds interfaces faster than a GPT query for React.
 - **[Vite](https://vitejs.dev):** Because who doesn’t love a server that starts up faster than a new lame joke from Reddit climbs the r/memes.
 
@@ -67,26 +64,32 @@ Fork this repository, and your copy will automatically deploy to GitHub Pages th
 ## How to Launch (For the Brave and Curious)
 
 1. **Clone the Repository**
+
    ```bash
    git clone https://github.com/mentoster/magicmoment.git
    cd magicmoment
    ```
 
 2. **Install Dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Run Development Mode**
+
    ```bash
    npm run dev
    ```
+
    Any changes are picked up instantly (hot-reload, babe)!
 
 4. **Build the Project**
+
    ```bash
    npm run build
    ```
+
    Builds the production version of the site (files will be in the `build` folder).
 
 5. **Preview the Build (Optional)**
